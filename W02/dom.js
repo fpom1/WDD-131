@@ -30,3 +30,12 @@ console.log(image.getAttribute("src"))
 // change image attribute
 
 image.setAttribute("src","https://store.wikimedia.org/cdn/shop/products/HatGIF.gif?v=1761842802")
+
+
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+                
