@@ -1,0 +1,39 @@
+body {
+    background-color: #000000;
+    font-size: 20px;
+}
+#content {
+    max-width: 60%;
+    margin: 40px auto;
+    border: 1px solid lightgrey;
+    padding: 50px;
+}
+h3 {
+    color: #035f9c;
+}
+hr {
+    height: 3px;
+    background-color: lightgrey;
+    margin: 30px auto;
+    width: 80%;
+    border: none;
+}
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+.list {
+    list-style-type: decimal;
+    color: white;
+}
+p{
+    text-align: left;
+    color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; 
+  max-width: 200px;
+}
