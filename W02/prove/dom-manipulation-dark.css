@@ -9,6 +9,7 @@ body {
     padding: 50px;
 }
 h3 {
+    text-align: center;
     color: #035f9c;
 }
 hr {
@@ -18,7 +19,7 @@ hr {
     width: 80%;
     border: none;
 }
-h1, h3 {
+h1{
     text-align: center;
     color: white;
 }
