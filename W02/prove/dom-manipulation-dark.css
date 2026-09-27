@@ -25,6 +25,8 @@ h1{
 }
 .list {
     list-style-type: decimal;
+    display: grid;
+    gap: 0.7em;
     color: white;
 }
 p{
