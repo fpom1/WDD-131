@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header,
+footer {
+    max-width: 1000px;
+    background-color: rgb(93, 125, 222);
+}
+main{
+    max-width: 1000px;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    nav a {
+        display: inline;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        display: none;
+    }
+
+    .menu-btn {
+        display: show;
+    }
+
+    section {
+        max-width: 30%;
+    }
+}
+
+@media ((min-width: 1000px)) {
+
+    section {
+        max-width: 25%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        display: show;
+    }
+
+    nav a {
+        padding: 20px;
+        color: black;
+        display: show;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        color: #616061;
+    }
+
+}
