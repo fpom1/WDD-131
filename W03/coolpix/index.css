@@ -6,34 +6,25 @@ body {
 
 header,
 footer {
-    max-width: 1000px;
     background-color: rgb(93, 125, 222);
 }
-main{
-    max-width: 1000px;
+
+main {
     background-color: lightgray;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
     text-align: center;
 }
 
-nav{
-    display: none;
-}
+
 section {
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     margin: 1em;
     border: 1px solid #ccc;
-    width: 400px;
-}
-
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .menu-btn {
@@ -53,21 +44,63 @@ main {
     margin: 5px 0;
 }
 
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+
 footer {
     text-align: center;
 }
 
-img {
-    width: 100%;
-    height: 100%;
+section img {
+    width: 270px;
+    height: 270px;
     object-fit: cover;
     object-position: center;
 }
 
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
 
-@media (min-width: 600px) and (max-width: 1000px) {
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+@media (min-width: 755px) and (max-width: 988px) {
     nav a {
         display: inline;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
     }
 
     .menu-btn {
@@ -77,26 +110,18 @@ img {
     nav {
         display: flex;
         justify-content: end;
-        display: none;
     }
 
     .menu-btn {
         display: show;
     }
 
-    section {
-        max-width: 30%;
-    }
 }
 
-@media ((min-width: 1000px)) {
-
-    section {
-        max-width: 25%;
-    }
-
+@media (min-width: 988px) {
     nav {
         display: flex;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -104,21 +129,12 @@ img {
         display: none;
     }
 
-    nav {
+
+    .gallery {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        display: show;
-    }
-
-    nav a {
-        padding: 20px;
-        color: black;
-        display: show;
-    }
-
-    nav a:hover {
-        text-decoration: none;
-        color: #616061;
+        max-width: 1000px;
     }
 
 }
