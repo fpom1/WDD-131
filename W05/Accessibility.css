@@ -80,8 +80,7 @@ footer {
     }
 
     .movie img {
-        grid-row-start: 1;
-        grid-row-end: 6;
+        grid-row: 1/6;
     }
 
 }
